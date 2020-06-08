@@ -1,0 +1,17 @@
+<!--miniprogram/pages/upload/upload.wxml-->
+<form bindsubmit='onSubmit'>
+  <image src="/images/noPic.jpeg" mode="widthFix" class="first-img" wx:if="{{promiseImgArr.length==0}}">
+    <button class="btn-up" bindtap="upImg">+ 图片</button>
+  </image>
+  <image src="{{promiseImgArr[0]}}" mode="widthFix" class="first-img" wx:else>
+    <!-- <view class="masking"></view> -->
+    <button class="btn-up" wx:if="{{promiseImgArr.length<9}}" bindtap="upImg">+ 图片</button>
+  </image>
+  <view class="img-box">
+    <image wx:for="{{promiseImgArr}}" wx:if="{{index>0}}" src="{{item}}" mode="widthFix" class="img"></image>
+  </view>
+
+  <textarea placeholder="请输入图片描述" name='text'></textarea>
+
+  <button form-type="submit" class="btn-submit">提交</button>
+</form>

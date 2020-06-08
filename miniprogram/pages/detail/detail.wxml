@@ -1,0 +1,13 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<!-- <view class="img-box">
+  <image wx:for="{{detail.imgs}}" src="{{item}}" mode="widthFix" bindtap="previewImg" data-url="{{item}}"></image>
+</view> -->
+<swiper indicator-dots="true" circular="true">
+        <block wx:for="{{detail.imgs}}" wx:key="*this">
+          <swiper-item>
+              <image src="{{item}}" mode="aspectFit"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+<view class="time">上传时间：{{detail.uploadTime}}</view>
+<view class='text'>图片描述：{{detail.text}}</view>

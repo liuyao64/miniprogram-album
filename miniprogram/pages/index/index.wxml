@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="bg" style="background-image: url({{background}});" mode='scaleToFill'>
+  <view class="box" wx:if="{{list.length>0}}">
+    <view wx:for="{{list}}">
+      <view class="flex-row">
+        <image src="/images/icon-calendar.png" class="icon-pic"></image>
+        <view class="mg_lt_30 date">{{item.date}}</view>
+      </view>
+      <view wx:for="{{item.images}}" wx:for-item="img" class="flex-row">
+        <view class='left'>
+          <view class="v-line"></view>
+          <image src="/images/icon-point.png" class="point"></image>
+          <view class="v-line"></view>
+        </view>
+        <view class="right" catchtap="gotoDetail" data-img="{{img}}">
+          <image src="{{img.imgs[0]}}" class="pic" mode="aspectFit"></image>
+          <view class="mg_lt_30">
+            <view class="time">{{img.uploadTime}}</view>
+            <view class=" text">{{img.text}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="add" bindtap="gotoAdd" wx:if="{{list.length>0}}">
+    <image src="/images/icon-add.png" class="icon-add"></image>
+  </view>
+
+  <button wx:if="{{list.length==0}}" class="btn-up" bindtap="gotoAdd">上传图片</button>
+</view>
