@@ -12,8 +12,7 @@
 
 ## 效果图
  <img src="https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG516.jpeg" width="375" alt="时间轴"/>
- ![首页时间轴](https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG516.jpeg "时间轴")
 
- ![上传图片](https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG518.jpeg "上传图片")
+ <img src="https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG518.jpeg" width="375" alt="时间轴"/>
 
- ![图片详情](https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG517.jpeg "图片详情")
+ <img src="https://github.com/liuyao64/miniprogram-album/blob/master/miniprogram/images/%E6%95%88%E6%9E%9C%E5%9B%BE/WechatIMG517.jpeg" width="375" alt="时间轴"/>
